@@ -1,0 +1,12 @@
+<h3 class="text-center">Public Fees</h3>
+  <!-- We are going to get an array of fees stored in the publicFees variable. We'll loop over that variable here using the ngFor directive -->
+  <div class="col-sm-4" *ngFor="let fee of publicFees">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{fee.feeName}}</h3>
+      </div>
+      <div class="panel-body">
+      {{fee.hudNumber}}
+      </div>
+    </div>
+  </div>
